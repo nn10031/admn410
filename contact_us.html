@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Durham House of Pets (DHP)</title>
+      <meta charset="utf-8" />
+	 
+	 <style>
+	 p  {color:#000000;font-size:110%;line-height:1.8;font-weight: bold;}
+	 h1, h2{text-align:center;color:#6A5ACD;}
+	 #navigation {
+				background-color:#F0F8FF;
+				height:100%;
+				width:100%;
+				padding: 10px;
+				border: 5px solid #33CCCC;
+				margin: 0px;
+				position: relative;
+				text-align:center;
+				font-size:180%;
+		}
+	 body {background-image: url("dogs4.jpg");}
+	 #map {
+        height: 400px;
+        width: 30%;
+		
+       }
+	a:link    {color:#0000CD;text-decoration:none;}
+    a:visited {color:#4169E1;text-decoration:none;}
+    a:hover   {color:#CC3300;text-decoration:underline;}
+    a:active  {color:#CC3300;text-decoration:underline;}
+
+	</style>
+   </head>
+   <body>
+   <h1 id="title">Welcome to Durham House of Pets (DHP) Website</h1>
+   <div id="navigation">
+   <nav> 
+   <a href="index.html">About Us</a> |    
+   <a href="employees.html">Our Team</a> |
+   <a href="products.html">Products</a> |
+   <a href="policies.html">Policies</a>|
+   <a href="contact_us.html">Contact us</a>
+   </nav>
+   </div>
+	  <h2>Contact Us</h2>
+	  <p>Google Map</p>
+	  <div id="map"></div>
+	  
+    <script>
+      function initMap() {
+        var uluru = {lat: 43.1377435, lng:-70.9244671};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9teHGZaeCvUtqKugPX1yD9nevuTGtIo&callback=initMap">
+    </script>
+	<div>
+	<p>Corporate Office</p>
+	18 Coe Dr, Durham, NH, 03824<br/>
+	Phone: (603)-866-4380<br/>
+	Fax: (603)-598-4853<br/>
+	  email:<a href="mailto:nn1003@wildcats.unh.edu">Corporate Inquiry</a><br/>
+	  
+	 <p>Regional Office</p>
+	1002 Milk Street, Portsmouth, NH, 03801<br/>
+	Phone: (603)-455-8760<br/>
+	Fax: (603)-875-4880<br/>
+	  email:<a href="mailto:nn1003@wildcats.unh.edu">Regional Office Inquiry</a><br/>
+	 
+	 <p>Regional Office</p>
+	56 Beacon Street, Manchester, NH, 03101<br/>
+	Phone: (603)-075-8872<br/>
+	Fax: (603)-738-0458<br/>
+	  email:<a href="mailto:nn1003@wildcats.unh.edu">Regional Office Inquiry</a><br/>
+	  <p>Find Us On Facebook</p>
+	  <p><a href="https://www.facebook.com"><img src="facebook.png" alt="facebook " width="10%" height="10%"></a></p>
+		
+
+	  
+	  
+	  
+	  
+	  
+    </body>
+</html>
